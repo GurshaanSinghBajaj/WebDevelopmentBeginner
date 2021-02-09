@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Spartan', serif;
+    height: 100%;
+  }
+
+.attribution {
+    position: absolute;
+    top: 450px;
+    left: 40%;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  .top-container {
+    position: relative;
+    min-height: 400px;
+    /*
+    background-image: url(images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+    */
+  }
+
+  .heading-container {
+    position: absolute;
+    width: 45%;
+    left: 0;
+  }
+
+  .review-container {
+    position: absolute;
+    left: 45%;
+    width: 55%;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .bottom-container {
+    position: relative;
+  }
+
+  .tagline {
+    color: hsl(300, 43%, 22%);
+    text-align: left;
+    font-weight: bolder;
+    width: 55%;
+    font-size: 48px;
+    margin: 150px auto auto 300px;
+  }
+
+  .tagline-text {
+    width: 53%;
+    line-height: 1.5;
+    font-size: 15px;
+    text-align: left; 
+    font-weight: 600;
+    color: hsl(303, 10%, 53%);
+    margin: 16px auto auto 300px;
+  }
+
+  .rate-text {
+    font-weight: bolder;
+    padding-left:30px;
+    padding-top: 25px;
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .rate {
+    position: absolute;
+    left: 150px;
+    width: 350px;
+    height: 40px;
+  }
+
+  .rating1 {
+    border-radius: 10px;
+    height: 70px;
+    width: 500px;
+    background-color:  hsl(300, 24%, 96%);
+    margin: 150px auto auto 100px;
+    position: relative;
+  }
+
+  .rating2 {
+    border-radius: 10px;
+    height: 70px;
+    width: 500px;
+    background-color:  hsl(300, 24%, 96%);
+    margin: 20px auto auto 175px;
+    position: relative;
+  }
+
+  .rating3 {
+    border-radius: 10px;
+    height: 70px;
+    width: 500px;
+    background-color:  hsl(300, 24%, 96%);
+    margin: 20px auto auto 225px;
+    position: relative;
+  }
+
+  .stars {
+    position: absolute;
+    width: 150px;
+    font-size: 15px;
+    padding-top: 25px;
+    padding-left: 20px;
+  }
+
+  .star {
+    padding-left: 3px;
+    padding-right: 3px
+  }
+
+  .review1 {
+    height: 250px;
+    width: 400px;
+    background-color: hsl(300, 43%, 22%);
+    left:300px;
+    top: 80px;
+    border-radius: 10px;
+    position: absolute;
+  }
+
+  .review2 {
+    height: 250px;
+    width: 400px;
+    background-color: hsl(300, 43%, 22%);
+    left:750px;
+    top: 110px;
+    border-radius: 10px;
+    position: absolute;
+  }
+
+  .review3 {
+    height: 250px;
+    width: 400px;
+    background-color: hsl(300, 43%, 22%);
+    left:1200px;
+    top: 140px;
+    border-radius: 10px;
+    position: absolute;
+  }
+
+  .image {
+    border-radius: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    float: left;
+    margin-right: 30px;
+  }
+
+  .intro {
+      height: 75px;
+  }
+
+  .name {
+    margin:0;
+    padding-top: 25px;
+    color: white;
+    text-align: left;
+    font-size: 15px;
+  }
+
+  .buyer {
+    margin:0;
+    padding-top: 5px;
+    text-align: left;
+    color: hsl(303, 10%, 53%);
+    font-size: 15px;
+  }
+
+  .review-text {
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+  }

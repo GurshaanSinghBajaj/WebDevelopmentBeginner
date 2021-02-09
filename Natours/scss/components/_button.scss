@@ -1,0 +1,94 @@
+.btn {
+
+    &,
+    &:link, 
+    &:visited {
+        @include btn-style();
+        border: none;
+        cursor: pointer;
+    }
+
+    &:hover {
+        transform: translateY(-0.3rem);
+        box-shadow: 0 1rem 2rem rgba($color-black,0.2);
+        /*
+            box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
+        */
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    
+    &:focus,
+    &:active {
+        outline: none;
+        transform: translateY(-0.1rem);
+        box-shadow: 0 0.5rem 1rem rgba($color-black,0.2);
+    }
+    
+    &--white{
+        background-color: white;
+        color: $color-grey-dark;
+
+        &::after {
+            background-color: $color-white;
+        }
+        
+    }
+
+    &--green{
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
+        }
+        
+    }
+    
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        /* hiding behind the button making the button position relative */
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    
+    &--animated {
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+    
+}
+
+.btn-text {
+    &:link,
+    &:visited {
+        font-size: $font-default;
+        color: $color-primary;
+        display: inline-block;
+        text-decoration: none;
+        padding: 3px;
+        border-bottom: 1px solid $color-primary;
+        transition: all .2s;
+    }
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+        transform: translateY(-0.3rem);
+        box-shadow: 0 .5rem 1rem rgba($color-black,0.2);
+    }
+
+    &:active {
+        transform: translateY(-0.1rem);
+        box-shadow: 0 0.25rem 5rem rgba($color-black,0.2);
+    }
+}

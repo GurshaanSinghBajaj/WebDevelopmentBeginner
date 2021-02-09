@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; /* better preactice */
+}
+
+html {
+    /*
+    setting root font size in px is also a bad
+    practice beacuse them people will not be able to change
+    the font of the website if they want. we should set it in %.
+    font-size: 10px;
+    */
+    font-size:62.5%;
+    /* setting root font size for using rem all*/
+}
+
+body {
+    box-sizing: border-box;
+}
